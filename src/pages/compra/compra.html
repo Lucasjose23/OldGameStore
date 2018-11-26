@@ -1,0 +1,58 @@
+<!--
+  Generated template for the CompraPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>compra</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding class="principalcompra">
+    <ion-card  id="cardcompra" style="opacity:0.85;">
+        <ion-card-header>
+          MiniConsole
+        </ion-card-header>
+        <ion-card-content >
+            <ion-img width="80" height="60" src="../assets/imgs/mini.jpg" style="position: absolute;"></ion-img>
+         
+          <p style="margin-left:85px"> Capa: tipo {{tipoCategoria.capa}}
+            <br>Memoria: {{tipoCategoria.memoria}}
+            <br>Acessório: Opção {{tipoCategoria.acessorio}}</p>
+        </ion-card-content>
+      </ion-card>
+
+      <ion-label style="color: #fdfdfd;">Quantidade <ion-badge >{{rangeObject}}</ion-badge></ion-label>
+      
+      <ion-item style="opacity:0.85; margin-bottom: 30px;border-radius: 10px;">
+
+          <ion-range min="1" max="10" step="1" snaps="true" color="secondary" [(ngModel)]="rangeObject" (ionChange)="calculaValorTotal()"></ion-range>
+
+      </ion-item>
+        
+      
+      
+
+
+    <ion-item style="opacity:0.85; margin-bottom: 30px; border-radius: 10px;">
+        <ion-label>Tipo de pagamento:</ion-label>
+        <ion-select >
+          <ion-option value="nes">Cartão</ion-option>
+          <ion-option value="n64">Boleto</ion-option>
+        </ion-select>
+      </ion-item>
+
+      <ion-item style="opacity:0.85; margin-bottom: 30px; border-radius: 10px;">
+
+          <ion-label>Valor Total: R${{valorTotal}},00</ion-label>
+
+      </ion-item>
+
+      <button ion-button full round class="btn-custom" style="opacity:0.85;" (click)="confirmaCompar()">Comprar</button>
+
+</ion-content>

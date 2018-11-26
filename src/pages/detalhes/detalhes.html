@@ -1,0 +1,94 @@
+<!--
+  Generated template for the DetalhesPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>detalhes</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding class="principaldetalhe">
+    <ion-list radio-group >
+        <ion-list-header>
+          Capa<ion-badge >$100,00</ion-badge>
+        </ion-list-header>
+      
+        <ion-item class="radio">
+          <ion-label><ion-img class="img-radio"  src='../assets/imgs/tipo_capa.jpg' ></ion-img> </ion-label>
+          <ion-radio class="radio" (click)="adicionarC(1)" ></ion-radio>
+        </ion-item>
+      
+        <ion-item class="radio">
+          <ion-label><ion-img class="img-radio"  src='../assets/imgs/tipo_capa2.jpg' ></ion-img></ion-label>
+          <ion-radio (click)="adicionarC(2)"  ></ion-radio>
+        </ion-item>
+      
+        <ion-item class="radio">
+          
+          <ion-label > <ion-img class="img-radio"  src='../assets/imgs/tipo_capa3.jpg' ></ion-img></ion-label>
+          <ion-radio (click)="adicionarC(3)"   ></ion-radio>
+          
+        </ion-item>
+      </ion-list>
+
+
+      <ion-list radio-group>
+        <ion-list-header>
+          Memoria
+        </ion-list-header>
+      
+        <ion-item class="radio">
+          <ion-label>32 GB <ion-badge >$100,00</ion-badge></ion-label>
+          <ion-radio (click)="adicionarM(1)"  ></ion-radio>
+        </ion-item>
+      
+        <ion-item class="radio">
+          <ion-label>64 GB<ion-badge >$200,00</ion-badge></ion-label>
+          <ion-radio (click)="adicionarM(2)" ></ion-radio>
+        </ion-item>
+      
+        <ion-item class="radio">
+          
+          <ion-label>128 GB <ion-badge >$300,00</ion-badge> </ion-label>
+          <ion-radio (click)="adicionarM(3)" ></ion-radio>
+          
+        </ion-item>
+      </ion-list>
+
+      <ion-list radio-group>
+        <ion-list-header>
+          Acessórios
+        </ion-list-header>
+      
+        <ion-item class="radio">
+          <ion-label>Opção 1 <ion-badge >$100,00</ion-badge></ion-label>
+          <ion-radio (click)="adicionarA(1)"></ion-radio>
+        </ion-item>
+      
+        <ion-item class="radio">
+          <ion-label>Opção 2 <ion-badge >$200,00</ion-badge></ion-label>
+          <ion-radio  (click)="adicionarA(2)"></ion-radio>
+        </ion-item>
+      
+        <ion-item class="radio">
+          
+          <ion-label>Opção 3 <ion-badge >$300,00</ion-badge></ion-label>
+          <ion-radio (click)="adicionarA(3)" ></ion-radio>
+          
+        </ion-item>
+      </ion-list>
+
+      <button ion-button full round class="btn-custom" (click)="comprar()">Comprar</button>
+      
+      
+
+      
+
+
+</ion-content>

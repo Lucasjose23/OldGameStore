@@ -1,0 +1,43 @@
+.principaldetalhe {
+    background: linear-gradient(to bottom, #71a7dd, #073869);
+    
+}
+.principaldetalhe ion-list{
+    opacity: 0.85;
+    margin-top: 30px;
+    
+}
+
+.principaldetalhe ion-list-header{
+    background: none;
+    color: #fdfdfd;
+}
+.principaldetalhe ion-badge{
+    float: right;
+    font-size: 12px;
+
+}
+.radio{
+    background-color: rgba (256,256,256, 0.7)
+}
+
+.img-radio {
+    height: 60px;
+    width: 80px;
+    margin-left: 80px;
+ 
+   
+  
+}
+.img-radio:hover{
+    transform: scale(2);
+    transform-origin: 0 0;
+}
+
+.btn-custom{
+    margin-top: 30px;
+    background: #00cc99;
+    text-align: center
+}
+
+

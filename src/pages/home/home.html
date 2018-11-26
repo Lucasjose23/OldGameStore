@@ -1,0 +1,51 @@
+<ion-header>
+    <ion-navbar>
+    <button ion-button menuToggle >
+        <ion-icon name="menu"></ion-icon>
+      </button>
+        <ion-title style="margin-left:50px; margin-top:-30px; position:absolute">
+          OldGameStore
+        </ion-title>
+      </ion-navbar>   
+
+</ion-header>
+
+<ion-content class="principal" padding >
+    <ion-menu [content]="content" side="left" type="overlay">
+        <ion-content>
+          <ion-list>
+            <button ion-item (click)="openPage2()">
+              Login
+            </button>
+            <button ion-item (click)="openPage3()">
+              Cadastro
+            </button>
+            <button ion-item (click)="openPage4()">
+              Contato
+            </button>
+          </ion-list>
+        </ion-content>
+    </ion-menu>
+      
+      <ion-nav id="nav" #content [root]="rootPage"></ion-nav>
+
+      <ion-card style="opacity:0.85;" full id="card">
+        <ion-card-header>
+          MiniConsole
+        </ion-card-header>
+        <ion-card-content >
+            <ion-img width="80" height="60" src="../assets/imgs/mini.jpg" style="position: absolute;"></ion-img>
+         
+          <p style="margin-left:85px"> Escolha a capa,a capacidade e outros acessorios.</p>
+     
+        </ion-card-content>
+        <button ion-button round class="btn-custom1" full (click)="goDetalhes()">
+          Customizar
+        </button>
+      </ion-card>
+
+     
+   <!---tela de login, tela de cadastro -->   
+  
+ 
+</ion-content>
